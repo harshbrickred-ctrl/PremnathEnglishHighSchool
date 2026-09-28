@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | Premnath English High School</title>
+  <meta name="description" content="Apply to Premnath English High School, Survey No. 215, Near Hasova Mandir, Naigaon East, Palghar 401208.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast is-scrolled" data-header>
+    <div class="wrap mast-inner">
+      <a class="brand" href="index.html">
+        <span class="monogram">PE</span>
+        <span>
+          <p class="brand-name">Premnath English High School</p>
+          <p class="brand-tag">Learn with a clear voice</p>
+        </span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a class="nav-link" href="index.html#home">Home</a>
+        <a class="nav-link" href="index.html#about">About</a>
+        <a class="nav-link" href="index.html#academics">Academics</a>
+        <a class="nav-link" href="index.html#events">Events</a>
+        <a class="nav-link" href="index.html#gallery">Gallery</a>
+        <a class="nav-link" href="index.html#birthdays">Birthdays</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-clay desktop-cta" href="admissions.html">Admissions</a>
+        <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="mobile-nav" data-mobile-nav>
+      <div class="nav-mobile-inner">
+        <a class="nav-link" href="index.html#home">Home</a>
+        <a class="nav-link" href="index.html#about">About</a>
+        <a class="nav-link" href="index.html#academics">Academics</a>
+        <a class="nav-link" href="index.html#events">Events</a>
+        <a class="nav-link" href="index.html#gallery">Gallery</a>
+        <a class="nav-link" href="index.html#birthdays">Birthdays</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+        <a class="btn btn-clay btn-block" href="admissions.html">Admissions</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <div class="wrap">
+      <div data-admission-thanks hidden>
+        <div class="success">
+          <p class="kicker">Received</p>
+          <h1>Application noted.</h1>
+          <p class="page-intro">Thank you. The application has been sent to the school office. You can also call 07947105648.</p>
+          <a class="btn btn-ink" style="margin-top: 1.4rem;" href="index.html">Back to the school</a>
+        </div>
+      </div>
+
+      <div data-admission-form>
+        <a class="back-link" href="index.html">Back to the school</a>
+        <p class="kicker">Naigaon East · Established 2013</p>
+        <h1>Ask for a seat.</h1>
+        <p class="page-intro">Premnath English High School is a co-ed, English-medium school. The directory names Nursery and Kindergarten, and also lists the school under primary schools. Fees and age cut-offs are not on that listing.</p>
+
+        <div class="page-grid">
+          <form class="form-card" action="php/send.php" method="post">
+            <h2 class="form-head">Application</h2>
+            <p class="banner-err" data-form-error>The application could not be sent. Call the school office or try again after the mailbox is set.</p>
+            <input type="hidden" name="form_type" value="admission">
+            <p class="hp"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></p>
+            <div class="fields">
+              <div class="fields fields-2">
+                <div class="field">
+                  <label for="student_name">Student name</label>
+                  <input id="student_name" name="student_name" required placeholder="Full name">
+                </div>
+                <div class="field">
+                  <label for="parent_name">Parent or guardian</label>
+                  <input id="parent_name" name="parent_name" required placeholder="Parent name">
+                </div>
+              </div>
+              <div class="fields fields-2">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" required>
+                </div>
+              </div>
+              <div class="fields fields-2">
+                <div class="field">
+                  <label for="date_of_birth">Date of birth</label>
+                  <input id="date_of_birth" name="date_of_birth" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="class_applying">Class applying for</label>
+                <select id="class_applying" name="class_applying" required>
+                  <option value="">Select class</option>
+                  <option>Nursery</option>
+                  <option>Kindergarten</option>
+                  <option>Primary</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+              </div>
+              <div class="field">
+                <label for="previous_school">Previous school</label>
+                <input id="previous_school" name="previous_school">
+              </div>
+              <div class="field">
+                <label for="additional_info">Anything else</label>
+                <textarea id="additional_info" name="additional_info" rows="3" placeholder="Sibling in school, transport, or a preferred visit day"></textarea>
+              </div>
+              <button class="btn btn-clay btn-block" type="submit" data-loading="Submitting...">Submit application</button>
+            </div>
+          </form>
+
+          <aside class="doc-card" id="documents">
+            <h2>Papers to bring</h2>
+            <ol class="doc-list">
+              <li><strong>Birth certificate</strong><span>Original and one copy.</span></li>
+              <li><strong>Transfer certificate</strong><span>From the previous school, if the child is already in school.</span></li>
+              <li><strong>Last report card</strong><span>The most recent mark sheet.</span></li>
+              <li><strong>Aadhaar</strong><span>A copy of the student’s Aadhaar card.</span></li>
+              <li><strong>Photographs</strong><span>Four recent passport-size photographs.</span></li>
+              <li><strong>Parent identity proof</strong><span>Aadhaar, PAN, or voter ID of the parent or guardian.</span></li>
+              <li><strong>Caste certificate</strong><span>Only if the family is applying under a reserved category.</span></li>
+              <li><strong>Address proof</strong><span>A utility bill, rental agreement, or other valid proof.</span></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="brand-name">Premnath English High School</p>
+          <p>Survey No. 215, Near Hasova Mandir, Juhu Chandra, Naigaon Station Road, Naigaon East, Palghar 401208.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#academics">Academics</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Office</h4>
+          <ul>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#birthdays">Birthdays</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine">© <span data-year>2026</span> Premnath English High School, Naigaon East.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
