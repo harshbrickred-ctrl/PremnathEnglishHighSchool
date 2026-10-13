@@ -3,51 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10243e">
   <title>Admissions | Premnath English High School</title>
   <meta name="description" content="Apply to Premnath English High School, Survey No. 215, Near Hasova Mandir, Naigaon East, Palghar 401208.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310243e'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='16' fill='%23f6f3ec'%3EP%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,620&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="mast is-scrolled" data-header>
+
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <p>Naigaon East, Palghar · Office open until 6:00 pm</p>
+      <a href="tel:+917947105648">079471 05648</a>
+    </div>
+  </div>
+
+  <header class="mast" data-header>
     <div class="wrap mast-inner">
       <a class="brand" href="index.html">
-        <span class="monogram">PE</span>
-        <span>
-          <p class="brand-name">Premnath English High School</p>
-          <p class="brand-tag">Learn with a clear voice</p>
+        <span class="mark" aria-hidden="true">P</span>
+        <span class="brand-text">
+          <span class="brand-name">Premnath English High School</span>
+          <span class="brand-tag">Naigaon East · Since 2013</span>
         </span>
       </a>
       <nav class="nav-desktop" aria-label="Primary">
         <a class="nav-link" href="index.html#home">Home</a>
         <a class="nav-link" href="index.html#about">About</a>
         <a class="nav-link" href="index.html#academics">Academics</a>
-        <a class="nav-link" href="index.html#events">Events</a>
         <a class="nav-link" href="index.html#gallery">Gallery</a>
-        <a class="nav-link" href="index.html#birthdays">Birthdays</a>
         <a class="nav-link" href="index.html#contact">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-clay desktop-cta" href="admissions.html">Admissions</a>
+        <a class="btn btn-primary desktop-cta" href="admissions.html" aria-current="page">Admissions</a>
         <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          <span class="menu-bars" aria-hidden="true"></span>
         </button>
       </div>
     </div>
     <div class="nav-mobile" id="mobile-nav" data-mobile-nav>
-      <div class="nav-mobile-inner">
+      <nav class="nav-mobile-inner" aria-label="Mobile">
         <a class="nav-link" href="index.html#home">Home</a>
         <a class="nav-link" href="index.html#about">About</a>
         <a class="nav-link" href="index.html#academics">Academics</a>
-        <a class="nav-link" href="index.html#events">Events</a>
         <a class="nav-link" href="index.html#gallery">Gallery</a>
-        <a class="nav-link" href="index.html#birthdays">Birthdays</a>
         <a class="nav-link" href="index.html#contact">Contact</a>
-        <a class="btn btn-clay btn-block" href="admissions.html">Admissions</a>
-      </div>
+        <a class="btn btn-primary btn-block" href="#application" aria-current="page">Admissions</a>
+      </nav>
     </div>
   </header>
 
@@ -55,89 +61,127 @@
     <div class="wrap">
       <div data-admission-thanks hidden>
         <div class="success">
-          <p class="kicker">Received</p>
-          <h1>Application noted.</h1>
-          <p class="page-intro">Thank you. The application has been sent to the school office. You can also call 07947105648.</p>
-          <a class="btn btn-ink" style="margin-top: 1.4rem;" href="index.html">Back to the school</a>
+          <p class="eyebrow">Received</p>
+          <h1>Application received.</h1>
+          <p class="lede">Thank you. The application has been sent to the school office. You can also call 079471 05648. The office is open until 6:00 pm.</p>
+          <a class="btn btn-primary" href="index.html">Back to the school</a>
         </div>
       </div>
 
       <div data-admission-form>
         <a class="back-link" href="index.html">Back to the school</a>
-        <p class="kicker">Naigaon East · Established 2013</p>
-        <h1>Ask for a seat.</h1>
-        <p class="page-intro">Premnath English High School is a co-ed, English-medium school. The directory names Nursery and Kindergarten, and also lists the school under primary schools. Fees and age cut-offs are not on that listing.</p>
+        <p class="eyebrow">Admissions · Naigaon East</p>
+        <h1>Apply for nursery, kindergarten, or primary.</h1>
+        <p class="lede">Premnath English High School is a co-ed, English-medium school. Call the office to confirm the section and a time to visit. The office is open until 6:00 pm.</p>
+
+        <ol class="steps steps-page">
+          <li>
+            <span>1</span>
+            <div>
+              <h2>Call</h2>
+              <p>Confirm the section on 079471 05648.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h2>Apply</h2>
+              <p>Send the child’s details in the form.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h2>Visit</h2>
+              <p>Bring the papers listed beside the form.</p>
+            </div>
+          </li>
+        </ol>
 
         <div class="page-grid">
-          <form class="form-card" action="php/send.php" method="post">
+          <form class="form-card" id="application" action="php/send.php" method="post">
             <h2 class="form-head">Application</h2>
-            <p class="banner-err" data-form-error>The application could not be sent. Call the school office or try again after the mailbox is set.</p>
+            <p class="form-note">Fields marked with * are required.</p>
+            <p class="banner-err" data-form-error role="alert">The application could not be sent. Call 079471 05648, or try again after the school mailbox is set.</p>
             <input type="hidden" name="form_type" value="admission">
             <p class="hp"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></p>
             <div class="fields">
-              <div class="fields fields-2">
-                <div class="field">
-                  <label for="student_name">Student name</label>
-                  <input id="student_name" name="student_name" required placeholder="Full name">
+              <fieldset class="fieldset">
+                <legend>The child</legend>
+                <div class="fields fields-2">
+                  <div class="field">
+                    <label for="student_name">Student name *</label>
+                    <input id="student_name" name="student_name" required autocomplete="name" placeholder="Full name">
+                  </div>
+                  <div class="field">
+                    <label for="date_of_birth">Date of birth *</label>
+                    <input id="date_of_birth" name="date_of_birth" type="date" required>
+                  </div>
+                </div>
+                <div class="fields fields-2">
+                  <div class="field">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" name="gender" required>
+                      <option value="">Select</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="class_applying">Class applying for *</label>
+                    <select id="class_applying" name="class_applying" required>
+                      <option value="">Select class</option>
+                      <option>Nursery</option>
+                      <option>Kindergarten</option>
+                      <option>Primary</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend>Parent or guardian</legend>
+                <div class="fields fields-2">
+                  <div class="field">
+                    <label for="parent_name">Name *</label>
+                    <input id="parent_name" name="parent_name" required autocomplete="name" placeholder="Parent name">
+                  </div>
+                  <div class="field">
+                    <label for="phone">Phone *</label>
+                    <input id="phone" name="phone" type="tel" required autocomplete="tel">
+                  </div>
                 </div>
                 <div class="field">
-                  <label for="parent_name">Parent or guardian</label>
-                  <input id="parent_name" name="parent_name" required placeholder="Parent name">
+                  <label for="email">Email *</label>
+                  <input id="email" name="email" type="email" required autocomplete="email">
                 </div>
-              </div>
-              <div class="fields fields-2">
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend>Home and previous school</legend>
                 <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" required>
-                </div>
-                <div class="field">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" required>
-                </div>
-              </div>
-              <div class="fields fields-2">
-                <div class="field">
-                  <label for="date_of_birth">Date of birth</label>
-                  <input id="date_of_birth" name="date_of_birth" type="date" required>
+                  <label for="address">Address *</label>
+                  <textarea id="address" name="address" rows="3" required></textarea>
                 </div>
                 <div class="field">
-                  <label for="gender">Gender</label>
-                  <select id="gender" name="gender" required>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <label for="previous_school">Previous school</label>
+                  <input id="previous_school" name="previous_school">
                 </div>
-              </div>
-              <div class="field">
-                <label for="class_applying">Class applying for</label>
-                <select id="class_applying" name="class_applying" required>
-                  <option value="">Select class</option>
-                  <option>Nursery</option>
-                  <option>Kindergarten</option>
-                  <option>Primary</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="address">Address</label>
-                <textarea id="address" name="address" rows="3" required></textarea>
-              </div>
-              <div class="field">
-                <label for="previous_school">Previous school</label>
-                <input id="previous_school" name="previous_school">
-              </div>
-              <div class="field">
-                <label for="additional_info">Anything else</label>
-                <textarea id="additional_info" name="additional_info" rows="3" placeholder="Sibling in school, transport, or a preferred visit day"></textarea>
-              </div>
-              <button class="btn btn-clay btn-block" type="submit" data-loading="Submitting...">Submit application</button>
+                <div class="field">
+                  <label for="additional_info">Anything else</label>
+                  <textarea id="additional_info" name="additional_info" rows="3" placeholder="Sibling in school, transport, or a preferred visit day"></textarea>
+                </div>
+              </fieldset>
+
+              <button class="btn btn-primary btn-block" type="submit" data-loading="Submitting...">Submit application</button>
             </div>
           </form>
 
           <aside class="doc-card" id="documents">
             <h2>Papers to bring</h2>
+            <p class="form-note">Bring these when you visit. The office can tell you if a paper does not apply.</p>
             <ol class="doc-list">
               <li><strong>Birth certificate</strong><span>Original and one copy.</span></li>
               <li><strong>Transfer certificate</strong><span>From the previous school, if the child is already in school.</span></li>
@@ -148,6 +192,7 @@
               <li><strong>Caste certificate</strong><span>Only if the family is applying under a reserved category.</span></li>
               <li><strong>Address proof</strong><span>A utility bill, rental agreement, or other valid proof.</span></li>
             </ol>
+            <p class="doc-note">Campus: Survey No. 215, near Hasova Mandir, Naigaon East 401208. Call <a href="tel:+917947105648">079471 05648</a>. Open until 6:00 pm.</p>
           </aside>
         </div>
       </div>
@@ -158,31 +203,37 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <p class="brand-name">Premnath English High School</p>
+          <p class="footer-name">Premnath English High School</p>
+          <p>Co-ed English-medium school in Naigaon East. Established in 2013.</p>
           <p>Survey No. 215, Near Hasova Mandir, Juhu Chandra, Naigaon Station Road, Naigaon East, Palghar 401208.</p>
         </div>
         <div>
-          <h4>Visit</h4>
+          <h2>Visit</h2>
           <ul>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#academics">Academics</a></li>
-            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4>Office</h4>
+          <h2>Office</h2>
           <ul>
-            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="tel:+917947105648">079471 05648</a></li>
+            <li>Open until 6:00 pm</li>
             <li><a href="#documents">Documents</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#birthdays">Birthdays</a></li>
           </ul>
         </div>
       </div>
       <p class="fine">© <span data-year>2026</span> Premnath English High School, Naigaon East.</p>
     </div>
   </footer>
+
+  <nav class="mobile-dock" aria-label="Quick actions">
+    <a href="tel:+917947105648">Call office</a>
+    <a class="dock-primary" href="#application">Application</a>
+  </nav>
+
   <script src="js/main.js"></script>
 </body>
 </html>

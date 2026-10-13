@@ -4,12 +4,13 @@ declare(strict_types=1);
 /**
  * Hostinger mail handler for the contact and admissions forms.
  *
- * All addresses below are placeholders. After the school mailbox exists,
- * set $fromEmail to that mailbox and $toEmail to the inbox that should
- * receive enquiries.
+ * From and To use the domain Hostinger serves this site on. Create those
+ * two mailboxes in hPanel, or replace the addresses below with mailboxes
+ * that already exist on this domain.
  */
-$toEmail = "office@premnathschool.example";
-$fromEmail = "admissions@your-school-domain.com";
+$host = siteHost();
+$toEmail = "office@" . $host;
+$fromEmail = "noreply@" . $host;
 $fromName = "Premnath English High School";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
@@ -99,6 +100,18 @@ $headers = [
 
 $sent = mail($toEmail, encodeSubject($subject), $body, implode("\r\n", $headers), "-f" . $fromEmail);
 redirect(safeReturn($type, $sent));
+
+function siteHost(): string
+{
+    $host = strtolower((string) ($_SERVER["SERVER_NAME"] ?? "localhost"));
+    $host = preg_replace("/:\d+$/", "", $host) ?? $host;
+    $host = preg_replace("/^www\./", "", $host) ?? $host;
+    if (!preg_match("/\A[a-z0-9.-]+\z/", $host)) {
+        return "localhost";
+    }
+
+    return $host;
+}
 
 function clean(string $value, int $max): string
 {
